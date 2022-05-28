@@ -1,0 +1,37 @@
+.slider-end {
+    padding-bottom: 50px;
+    .container-slider {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        justify-items: center;
+
+        .card-slider {
+
+            i {
+                margin-left: 10px;
+                transition: 0.4s;
+            }
+
+
+            img {
+                max-width: 100%;
+                transition: 0.4s;
+                transition-delay: 0.4s;
+            }
+
+            &:hover {
+                
+                img {
+                    transition: 0.4s;
+                    transition-delay: 0.4s;
+                    transform: scale(0.8);
+                }
+                i {
+                    transition: 0.4s;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}

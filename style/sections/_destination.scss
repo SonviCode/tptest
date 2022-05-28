@@ -1,0 +1,26 @@
+.destination {
+    padding: 50px 10%;
+    .container-grid {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        justify-items: center;
+
+        .card {
+
+            h2 {
+                font-size: 20px;
+                font-weight: 1000;
+            }
+
+
+            img {
+                max-width: 100%;
+            }
+
+            &:hover {
+                box-shadow: 0px 1px 5px 4px rgba(0,0,0,0.17);
+            }
+        }
+    }
+}

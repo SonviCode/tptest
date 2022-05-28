@@ -1,0 +1,42 @@
+.banniere {
+    background: rgb(172, 172, 172);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 5%;
+    align-items: center;
+
+    .logo {
+        padding: 10px;
+        background: gray;
+        border-radius: 5px;
+
+    }
+
+    .list-header {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+
+        li {
+            &:nth-last-child(1){
+                background-color: black;
+                padding: 10px;
+                border-radius: 100%;
+            
+                a {
+                    color: white;
+                }
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    @include sm {
+        flex-direction: column;
+    }
+}

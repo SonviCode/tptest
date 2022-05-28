@@ -1,0 +1,25 @@
+footer {
+    background:gray;
+    padding: 30px 0;
+
+    .footer-nav {
+        @extend %flex-center;
+        flex-direction: row;
+        gap: 20px;
+
+        li {
+            font-size: 24px;
+
+            a {
+                transition: 0.4s;
+            }
+
+            &:hover {
+                a {
+                    color: #fff;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+}
